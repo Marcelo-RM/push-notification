@@ -1,0 +1,25 @@
+{
+  "name": "push-notification",
+  "version": "1.0.0",
+  "description": "Using node js for web site push notication",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcelo-RM/push-notification.git"
+  },
+  "keywords": [],
+  "author": "marcelordrgs98@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marcelo-RM/push-notification/issues"
+  },
+  "homepage": "https://github.com/Marcelo-RM/push-notification#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "web-push": "^3.4.1"
+  }
+}
