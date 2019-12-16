@@ -15,8 +15,18 @@ const privateVapidKey = '0OStDmk4WsVXVrlqktv-YgzIftIotmguBsntvQaTlF0';
 
 webPush.setVapidDetails('mailto:marcelordrgs98@gmail.com', publicVapidKey, privateVapidKey);
 
+//Allow all to get response of API
+app.options("/subscribe", (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Headers', '*');
+    res.send(true);
+});
 // Subscribe Route
 app.post('/subscribe', (req, res) => {
+    //Allow all to get response of API
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Headers', '*');
+
     //Get puish subscription object
     const subscription = req.body;
 
